@@ -1,10 +1,11 @@
 import React from 'react';
 import Footer from '../Footer/Footer';
+import './Blogs.css'
 
 const Blogs = () => {
     return (
       <div >
-        <div style={{height :'70vh'}} class="accordion container mt-5" id="accordionExample">
+        <div  class="accordion container footer-Check mt-5" id="accordionExample">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">

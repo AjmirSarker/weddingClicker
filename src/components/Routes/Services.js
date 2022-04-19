@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Service from './Service/Service';
 import Footer from '../Footer/Footer';
+import './Services.css'
 
 
 const Services = () => {
@@ -15,7 +16,7 @@ const Services = () => {
     return (
         <div>
             
-        <div  style={{height :'70vh'}} className='container mt-5'>
+        <div   className='container mt-5 footer-check'>
         <h1 className='mt-5 mb-5 text-center'>Services</h1>
            <div class="row row-cols-1 row-cols-md-3 g-4">
                {

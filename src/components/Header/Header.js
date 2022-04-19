@@ -47,9 +47,8 @@ const Header = () => {
                                 About
                             </CustomLink>
                         </Nav.Link>
-                    </Nav>
-                </Navbar.Collapse>
-                {
+                        <Nav.Link>
+                        {
                     user? (               
                    
                         <p style={{paddingLeft :'150px'}}>
@@ -59,6 +58,10 @@ const Header = () => {
                    ):
                     (<Nav.Link className="order-md-3"><Link className="nav-link fw-bold fs-4 text-light" to='/login'>Log in</Link></Nav.Link>)
                 }
+                        </Nav.Link>
+                    </Nav>
+                </Navbar.Collapse>
+               
            
         </Navbar>
     );
