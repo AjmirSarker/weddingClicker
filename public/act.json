@@ -12,6 +12,7 @@
         "price": "25,000",
         "description": "A seminar is a more formal event, focused on training or information sharing, offered in an academic instruction-style setting.",
         "img": "./Threepic/formal.jpg"
+        
     },
     {
         "id": 3,
