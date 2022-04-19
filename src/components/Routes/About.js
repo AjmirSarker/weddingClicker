@@ -1,9 +1,11 @@
 import React from 'react';
 import Arafat from "../../assets/Arafat/arafat.jpg"
+import Footer from '../Footer/Footer';
 const About = () => {
     return (
-        <div style={{marginTop : '200px'}} className='d-flex justify-content-center'>
-        <div class="card" style={{width: '18rem'}}>
+      <div>
+        <div style={{marginTop : '200px'}} className='d-flex justify-content-center '>
+        <div className="card mb-5" style={{width: '18rem'}}>
         <img src={Arafat} class="card-img-top" alt="..."/>
         <div class="card-body">
           <h2 class="card-title">Arafat Sarker</h2>
@@ -11,6 +13,11 @@ const About = () => {
          
         </div>
       </div>
+     
+      
+      </div>
+      <Footer></Footer>
+      
       </div>
     );
 };

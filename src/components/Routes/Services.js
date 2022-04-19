@@ -2,6 +2,8 @@ import { Button } from 'react-bootstrap';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Service from './Service/Service';
+import Footer from '../Footer/Footer';
+
 
 const Services = () => {
     const [services, setServices] = useState([]);
@@ -11,8 +13,10 @@ const Services = () => {
             .then(data => setServices(data));
     }, [])
     return (
-        <div className='container mt-5'>
-
+        <div>
+            
+        <div  style={{height :'70vh'}} className='container mt-5'>
+        <h1 className='mt-5 mb-5 text-center'>Services</h1>
            <div class="row row-cols-1 row-cols-md-3 g-4">
                {
                    services.map(service=>
@@ -20,6 +24,8 @@ const Services = () => {
                    )
                }
         </div>
+        </div>
+        <Footer></Footer>
         </div>
     );
 };

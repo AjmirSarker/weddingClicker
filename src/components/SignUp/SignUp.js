@@ -9,6 +9,7 @@ import './SignUp.css'
 import Loading from "../Loading/Loading";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Footer from "../Footer/Footer";
 
 const SignUp = () => {
     const [signInWithGoogle, user1, loading1, error1] = useSignInWithGoogle(auth);
@@ -53,7 +54,8 @@ const SignUp = () => {
      errorElement = <p>{error?.message}{error1?.message}</p>
   }
   return (
-    <div className=" container">
+    <div>
+    <div style={{height : '75vh'}} className=" container">
         <h1 className="text-center text-warning">Sign Up</h1>
     <div className="w-75 mx-auto p-3">
       <Form className="my-2" onSubmit={submitted}>
@@ -123,6 +125,8 @@ const SignUp = () => {
         </div>
       </div>
       <ToastContainer />
+    </div>
+    <Footer></Footer>
     </div>
   );
 };

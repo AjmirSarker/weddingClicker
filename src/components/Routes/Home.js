@@ -4,7 +4,7 @@ import bannerOne from "../../assets/Arafat/okay3.jpg"
 import bannerTwo from "../../assets/Arafat/okay2.jpg"
 import bannerThree from "../../assets/Arafat/okay.jpg"
 import ExtraPart from "../ExtraPart/ExtraPart";
-import Footer from "../Footer/Footer";
+
 import Services from "./Services";
 const Home = () => {
   return (
@@ -46,15 +46,14 @@ const Home = () => {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
-      <div>
-        <Services></Services>
-      </div>
       <div className=" container mt-5">
       <ExtraPart></ExtraPart>
       </div>
       <div>
-        <Footer></Footer>
+        <Services></Services>
       </div>
+      
+     
     </div>
   );
 };

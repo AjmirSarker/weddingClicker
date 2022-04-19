@@ -8,6 +8,7 @@ import auth from "../../Firebase/firebase.init";
 import Loading from "../Loading/Loading";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Footer from "../Footer/Footer";
 
 const Login = memo(() => {
     const [signInWithGoogle, googleUser, googleLoading, googleError] = useSignInWithGoogle(auth);
@@ -46,14 +47,15 @@ const Login = memo(() => {
         const email = userEmail.current.value;
         if(email){
         await sendPasswordResetEmail(email);
-        toast('Sent email')
+        toast('Email sent')
         }
         else{
-          toast('Please enter')
+          toast('Please enter mail')
         }
       }
   return (
-    <div className="">
+    <div>
+    <div style={{height :'75vh'}} className="">
         <h1 className="text-center my-3 text-success">Log in</h1>
       <div className="p-3">
       <Form onSubmit={handleLogin} className='mx-auto w-75' >
@@ -71,7 +73,7 @@ const Login = memo(() => {
         </Button>
       </Form>
       <div className="my-2 pb-5 w-75 mx-auto">
-        <div style={{height:'120px'}} className="mx-auto mt-5 text-center rounded fs-5 fw-bold bg-secondary w-25 p-1  ">New user ? <br></br> <Link className="text-decoration-none text-warning" to='/signup'>Create an account</Link></div>
+        <div style={{height:'120px'}} className="mx-auto mt-5 text-center d-flex align-items-center  flex-column justify-content-center rounded fs-5 fw-bold bg-secondary w-25 p-1  ">New user ? <br></br> <Link className="text-decoration-none text-warning" to='/signup'>Create an account</Link></div>
         <div className="text-center"><button className="text-decoration-none fw-bold btn btn-link text-danger" onClick={resetPassword}>Forget Password ?</button></div>
         <div className="d-flex align-items-center">
           
@@ -91,6 +93,8 @@ const Login = memo(() => {
       </div>
       </div>
       <ToastContainer/>
+      </div>
+      <Footer></Footer>
     </div>
   );
 });

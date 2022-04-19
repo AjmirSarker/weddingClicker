@@ -15,7 +15,7 @@ const Header = () => {
     return (
         <Navbar className="p-3 sticky-top nav bg-success  " expand="lg">
            
-                <Navbar.Brand className=" fw-bold fs-2" href="#home">
+                <Navbar.Brand className=" fw-bolder text-info fs-2" href="#home">
                    Wedding  Clicker
                 </Navbar.Brand>
                 <Navbar.Toggle className="order-3 order-md-2"aria-controls="basic-navbar-nav"/>
